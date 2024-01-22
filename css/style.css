@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    color: #fff;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 3rem;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 128px;
+}
+
+form input.operator-btn {
+    color: #ffd700;
+    font-weight: 700;
+
+}
+
+form input.operators {
+    color: #ffd700;
+    font-weight: 700;
+}
+
+form .donate {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #ffd700;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 3s ease-in-out;
+    font-weight: 700;
+}
+
+form:hover .donate {
+    opacity: 1;
+}
+
+form .donate:hover {
+    background-color: #ffd700;
+    border: 1px solid #ff0000;
+    color: #262626;
+}
+
+form .copyright {
+    text-decoration: none;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    transition-delay: 3s;
+}
+
+form:hover .copyright {
+    opacity: 1;
+}
+
+form .copyright:hover {
+    color: #ffd700;
+}
